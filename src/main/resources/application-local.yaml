@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /smart-delivery
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
