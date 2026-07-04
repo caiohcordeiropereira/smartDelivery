@@ -1,7 +1,17 @@
 spring:
-  cloud:
-    config:
-      enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smart_delivery
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
 
 server:
   port: 8080
@@ -12,6 +22,7 @@ logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
+    org.flywaydb: DEBUG
 
 management:
   endpoints:
