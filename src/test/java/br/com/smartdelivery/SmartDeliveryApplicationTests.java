@@ -1,4 +1,4 @@
-package com.caiohenrique.smart_delivery;
+package br.com.smartdelivery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

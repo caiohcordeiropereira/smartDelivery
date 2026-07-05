@@ -1,4 +1,4 @@
-package com.caiohenrique.smart_delivery;
+package br.com.smartdelivery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
