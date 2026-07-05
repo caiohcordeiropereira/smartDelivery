@@ -1,0 +1,21 @@
+openapi: 3.0.3
+
+info:
+  title: Smart Delivery API
+  description: API responsável pelo gerenciamento da plataforma Smart Delivery.
+  version: "1.0.0"
+
+servers:
+  - url: http://localhost:8080/api
+    description: Ambiente Local
+
+tags:
+  - name: Products
+    description: Operações relacionadas aos produtos.
+
+paths: {}
+
+components:
+  schemas: {}
+  responses: {}
+  securitySchemes: {}

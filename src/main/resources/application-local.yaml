@@ -12,6 +12,18 @@ spring:
         format_sql: true
   flyway:
     enabled: true
+    default-schema: public
+    schemas:
+      - public
+
+springdoc:
+  api-docs:
+    enabled: true
+
+  swagger-ui:
+    enabled: true
+    path: /swagger
+    url: /openapi/openapi.yaml
 
 server:
   port: 8080
@@ -28,4 +40,16 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,metrics
+        include:
+          - health
+          - info
+          - metrics
+  endpoint:
+    health:
+      show-details: always
+
+info:
+  app:
+    name: Smart Delivery
+    description: Plataforma para gerenciamento de entregas.
+    version: "@project.version@"

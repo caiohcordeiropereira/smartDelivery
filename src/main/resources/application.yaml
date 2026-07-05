@@ -4,3 +4,25 @@ spring:
 
   profiles:
     active: local
+
+springdoc:
+  api-docs:
+    enabled: false
+
+  swagger-ui:
+    enabled: false
+
+info:
+  app:
+    version: "@project.version@"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+  endpoint:
+    health:
+      show-details: never
